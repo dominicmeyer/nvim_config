@@ -1,5 +1,5 @@
 require("includeLazy")
+require("lazy").setup("plugins")
+
 require("remap")
 require("set")
-
-require("lazy").setup("plugins")
