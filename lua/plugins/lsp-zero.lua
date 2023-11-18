@@ -14,13 +14,7 @@ return {
 				-- see :help lsp-zero-keybindings
 				-- to learn the available actions
 				lsp_zero.default_keymaps({ buffer = bufnr })
-				vim.keymap.set({ "n", "i" }, "<C-f>", function()
-					vim.lsp.buf.format({ async = false })
-					vim.cmd("w")
-				end)
 			end)
-
-			vim.lsp.set_log_level('debug')
 
 			require('mason').setup({})
 			require('mason-lspconfig').setup({
