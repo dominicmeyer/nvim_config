@@ -1,5 +1,7 @@
+require("remap")
+require("set")
+
 require("includeLazy")
 require("lazy").setup("plugins")
 
-require("remap")
-require("set")
+require("configureLspZero")

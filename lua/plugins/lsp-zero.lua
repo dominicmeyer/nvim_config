@@ -5,26 +5,7 @@ return {
 	},
 	{
 		'williamboman/mason-lspconfig.nvim',
-		version = "v1.22.0",
-		config = function()
-			local lsp_zero = require('lsp-zero')
-			lsp_zero.extend_lspconfig()
-
-			lsp_zero.on_attach(function(client, bufnr)
-				-- see :help lsp-zero-keybindings
-				-- to learn the available actions
-				lsp_zero.default_keymaps({ buffer = bufnr })
-			end)
-
-			require('mason').setup({})
-			require('mason-lspconfig').setup({
-				ensure_installed = { "dockerls", "bashls", "volar", "yamlls", "jsonls", "pylsp",
-					"marksman", "rust_analyzer", "tsserver", "emmet_ls", "html", "lua_ls" },
-				handlers = {
-					lsp_zero.default_setup,
-				},
-			})
-		end
+		version = "v1.22.0"
 	},
 	{
 		'VonHeikemen/lsp-zero.nvim',
@@ -45,5 +26,5 @@ return {
 	{
 		'L3MON4D3/LuaSnip',
 		version = "v2.1.0"
-	},
+	}
 }
