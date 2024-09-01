@@ -9,8 +9,6 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { "dockerls", "bashls", "volar", "yamlls", "jsonls", "pylsp",
-		"marksman", "rust_analyzer", "tsserver", "emmet_ls", "html", "lua_ls" },
 	handlers = {
 		lsp_zero.default_setup,
 	},

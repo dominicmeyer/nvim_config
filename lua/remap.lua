@@ -6,3 +6,7 @@ vim.keymap.set({ "n", "i" }, "<C-f>", function()
 	vim.lsp.buf.format({ async = false })
 	vim.cmd("w")
 end)
+
+vim.keymap.set("n", "<C-p>", function()
+	vim.cmd("Explore")
+end)
