@@ -2,6 +2,12 @@ return {
 	{
 		"theprimeagen/harpoon",
 		commit = "c1aebbad9e3d13f20bedb8f2ce8b3a94e39e424a",
+		dependencies = {
+			{
+				"nvim-lua/plenary.nvim",
+				version = "v0.1.4"
+			}
+		},
 		config = function()
 			require("harpoon").setup({
 				tabline = true

@@ -17,11 +17,11 @@ return {
 	},
 	{
 		'hrsh7th/cmp-nvim-lsp',
-		commit = "44b16d11215dce86f253ce0c30949813c0a90765"
+		commit = "39e2eda76828d88b773cc27a3f61d2ad782c922d"
 	},
 	{
 		'hrsh7th/nvim-cmp',
-		version = "v0.0.1"
+		commit = "ae644feb7b67bf1ce4260c231d1d4300b19c6f30"
 	},
 	{
 		'L3MON4D3/LuaSnip',
